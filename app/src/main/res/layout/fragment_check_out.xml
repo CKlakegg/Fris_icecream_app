@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.pay.CheakOutFragment"
+    android:background="@color/light_pink">
+
+    <TextView
+        android:id="@+id/your_order_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="din bestilling"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/order_textView"
+        android:layout_width="51dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="152dp"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="IS"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/your_order_textView" />
+
+
+    <Button
+        android:id="@+id/go_to_order_button"
+        android:layout_width="153dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="232dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/recoleta_"
+        android:text="betale"
+        android:textColor="@color/light_pink"
+        android:textColorLink="@color/redpink"
+        android:textSize="@dimen/button_textSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_textView" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="84dp"
+        android:background="@color/light_pink"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/go_to_order_button"
+        tools:src="@drawable/back_arrow" />
+
+    <Button
+        android:id="@+id/add_more_button"
+        android:layout_width="77dp"
+        android:layout_height="55dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="+1"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintBottom_toTopOf="@+id/go_to_order_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_textView"
+        app:layout_constraintVertical_bias="0.122" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

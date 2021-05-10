@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_pink"
+    tools:context=".ui.main.MainFragment">
+
+    <FrameLayout
+        android:id="@+id/container_layout"
+        android:layout_width="465dp"
+        android:layout_height="762dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/open_menu"
+        android:layout_width="230dp"
+        android:layout_height="81dp"
+        android:layout_marginHorizontal="100dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024"
+        app:srcCompat="@drawable/menu_closed" />
+
+    <TextView
+        android:id="@+id/front_number"
+        android:layout_width="101dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="@dimen/margin_icon_order"
+        android:fontFamily="@font/bakso_sapi"
+        android:gravity="center"
+        android:text="100%"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="@+id/open_menu"
+        app:layout_constraintStart_toStartOf="@+id/open_menu"
+        app:layout_constraintTop_toBottomOf="@+id/open_menu" />
+
+    <TextView
+        android:id="@+id/front_textView"
+        android:layout_width="205dp"
+        android:layout_height="29dp"
+        android:fontFamily="@font/bakso_sapi"
+        android:gravity="center"
+        android:text="FRI FOR MATALLERGENER"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="@dimen/Small_text"
+        app:layout_constraintBottom_toTopOf="@+id/front_number2"
+        app:layout_constraintEnd_toEndOf="@+id/front_number"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/front_number"
+        app:layout_constraintTop_toBottomOf="@+id/front_number"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/front_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="@string/_100"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintEnd_toEndOf="@+id/front_textView"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="@+id/front_textView"
+        app:layout_constraintTop_toBottomOf="@+id/front_number" />
+
+    <TextView
+        android:id="@+id/front_textView2"
+        android:layout_width="79dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/bakso_sapi"
+        android:gravity="center"
+        android:text="VEGANSK"
+        android:textColor="@color/redpink"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/front_number2"
+        app:layout_constraintStart_toStartOf="@+id/front_number2"
+        app:layout_constraintTop_toBottomOf="@+id/front_number2" />
+
+    <ImageView
+        android:id="@+id/icon_milk"
+        android:layout_width="@dimen/dimen_icon"
+        android:layout_height="@dimen/dimen_icon"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/front_textView2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/front_textView2"
+        app:srcCompat="@drawable/icon_milk" />
+
+    <ImageView
+        android:id="@+id/icon_nut"
+        android:layout_width="@dimen/dimen_icon"
+        android:layout_height="@dimen/dimen_icon"
+        android:layout_marginStart="@dimen/margin_icons"
+        app:layout_constraintStart_toEndOf="@+id/icon_milk"
+        app:layout_constraintTop_toTopOf="@+id/icon_milk"
+        app:srcCompat="@drawable/icon_nut" />
+
+    <ImageView
+        android:id="@+id/icon_bean"
+        android:layout_width="@dimen/dimen_icon"
+        android:layout_height="@dimen/dimen_icon"
+        android:layout_marginStart="@dimen/margin_icons"
+        app:layout_constraintStart_toEndOf="@+id/icon_nut"
+        app:layout_constraintTop_toTopOf="@+id/icon_milk"
+       app:srcCompat="@drawable/icon_bean" />
+
+    <ImageView
+        android:id="@+id/icon_egg"
+        android:layout_width="@dimen/dimen_icon"
+        android:layout_height="@dimen/dimen_icon"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toStartOf="@+id/icon_milk"
+        app:layout_constraintTop_toTopOf="@+id/icon_milk"
+        app:srcCompat="@drawable/icon_egg" />
+
+    <ImageView
+        android:id="@+id/icon_seads"
+        android:layout_width="@dimen/dimen_icon"
+        android:layout_height="@dimen/dimen_icon"
+        android:layout_marginStart="@dimen/margin_icons"
+        android:layout_marginTop="100dp"
+        app:layout_constraintStart_toEndOf="@+id/icon_egg"
+        app:layout_constraintTop_toTopOf="@+id/icon_milk"
+        app:srcCompat="@drawable/icon_seads" />
+
+    <ImageView
+        android:id="@+id/icon_gluten"
+        android:layout_width="@dimen/dimen_icon"
+        android:layout_height="@dimen/dimen_icon"
+        android:layout_marginStart="@dimen/margin_icons"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/icon_seads"
+        app:layout_constraintTop_toTopOf="@+id/icon_milk"
+       app:srcCompat="@drawable/icon_gluten" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

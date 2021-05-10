@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.order.chooseFlavorFragment"
+    android:background="@color/light_pink">
+
+    <TextView
+        android:id="@+id/choose_flavor_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="1.Velg smak"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/dimen_large"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/flavor_strawberry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choose_flavor_textView"
+        tools:srcCompat="@drawable/ice_redpink_ball" />
+
+    <TextView
+        android:id="@+id/flavor_strawberry_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="jordbær"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flavor_strawberry" />
+
+    <ImageView
+        android:id="@+id/flavor_vanilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_icon_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flavor_strawberry_textView"
+        tools:srcCompat="@drawable/ice_white_ball" />
+
+    <TextView
+        android:id="@+id/flavor_vanilla_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="Vanilje"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flavor_vanilla" />
+
+    <ImageView
+        android:id="@+id/flavor_chocolate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_icon_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flavor_vanilla_textView"
+        tools:srcCompat="@drawable/ice_brown_ball" />
+
+    <TextView
+        android:id="@+id/flavor_chocolate_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="Sjokolade"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/flavor_chocolate" />
+
+    <ImageView
+        android:id="@+id/back_button"
+        android:layout_width="110dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textVie_coffe"
+        tools:srcCompat="@drawable/back_arrow" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pink"
+    tools:context=".ui.main.menu.MenuFragment">
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="247dp"
+        android:layout_height="739dp"
+        android:background="@color/white"
+        tools:layout_editor_absoluteX="82dp" />
+
+
+    <ImageView
+        android:id="@+id/fris_logo_menu"
+        android:layout_width="183dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/logo_main" />
+
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="198dp"
+        android:layout_height="536dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fris_logo_menu"
+        tools:srcCompat="@drawable/ice_cream_menu" />
+
+    <Button
+        android:id="@+id/order_button"
+        android:layout_width="165dp"
+        android:layout_height="53dp"
+        android:background="@drawable/round_button"
+        android:fontFamily="@font/recoleta_"
+        android:text="bestille"
+        android:textSize="@dimen/button_textSize"
+        android:textAllCaps="false"
+        android:textColor="@color/light_pink"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/menu"
+        app:layout_constraintVertical_bias="0.393" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

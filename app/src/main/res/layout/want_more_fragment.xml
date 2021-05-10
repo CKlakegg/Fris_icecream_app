@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.pay.PayFragment"
+    android:background="@color/light_pink">
+
+    <TextView
+        android:id="@+id/want_more_textView"
+        android:layout_width="348dp"
+        android:layout_height="187dp"
+        android:layout_marginTop="156dp"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="vil du ha noe mer?"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/yes_button"
+        android:layout_width="65dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="JA /"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/want_more_textView" />
+
+    <TextView
+        android:id="@+id/no_button"
+        android:layout_width="83dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:fontFamily="@font/bakso_sapi"
+        android:text="NEI"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/medium_text"
+        app:layout_constraintStart_toEndOf="@+id/yes_button"
+        app:layout_constraintTop_toBottomOf="@+id/want_more_textView" />
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="88dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="200dp"
+        android:background="@color/light_pink"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yes_button"
+        tools:src="@drawable/back_arrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_icon">70dp</dimen>
+    <dimen name="margin_icons">20dp</dimen>
+    <dimen name="Small_text">15dp</dimen>
+    <dimen name="medium_text">30dp</dimen>
+    <dimen name="margin_icon_order">50dp</dimen>
+    <dimen name="icon_order">103dp</dimen>
+    <dimen name="dimen_large">40dp</dimen>
+    <dimen name="button_textSize">25dp</dimen>
+</resources>
