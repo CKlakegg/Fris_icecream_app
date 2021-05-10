@@ -72,7 +72,7 @@
         app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact_info_textView2"
-        tools:srcCompat="@drawable/fris_some_insta" />
+        app:srcCompat="@drawable/fris_some_insta" />
 
     <ImageView
         android:id="@+id/icon_mail"
@@ -84,7 +84,7 @@
         app:layout_constraintEnd_toEndOf="@+id/contact_info_textView2"
         app:layout_constraintStart_toStartOf="@+id/contact_info_textView2"
         app:layout_constraintTop_toBottomOf="@+id/contact_info_textView2"
-        tools:srcCompat="@drawable/fris_some_mail" />
+        app:srcCompat="@drawable/fris_some_mail" />
 
     <ImageView
         android:id="@+id/icon_facebook"
@@ -96,7 +96,7 @@
         app:layout_constraintHorizontal_bias="0.162"
         app:layout_constraintStart_toEndOf="@+id/icon_mail"
         app:layout_constraintTop_toBottomOf="@+id/contact_info_textView2"
-        tools:srcCompat="@drawable/fris_some_face" />
+        app:srcCompat="@drawable/fris_some_face" />
 
     <ImageView
         android:id="@+id/back_button_contact"
@@ -109,7 +109,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact_info_textView2"
         app:layout_constraintVertical_bias="0.96"
-        tools:srcCompat="@drawable/back_arrow" />
+        app:srcCompat="@drawable/back_arrow" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

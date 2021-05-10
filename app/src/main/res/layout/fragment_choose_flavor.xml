@@ -29,7 +29,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choose_flavor_textView"
-        tools:srcCompat="@drawable/ice_redpink_ball" />
+        app:srcCompat="@drawable/ice_redpink_ball" />
 
     <TextView
         android:id="@+id/flavor_strawberry_textView"
@@ -54,7 +54,7 @@
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flavor_strawberry_textView"
-        tools:srcCompat="@drawable/ice_white_ball" />
+        app:srcCompat="@drawable/ice_white_ball" />
 
     <TextView
         android:id="@+id/flavor_vanilla_textView"
@@ -77,7 +77,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/flavor_vanilla_textView"
-        tools:srcCompat="@drawable/ice_brown_ball" />
+        app:srcCompat="@drawable/ice_brown_ball" />
 
     <TextView
         android:id="@+id/flavor_chocolate_textView"
@@ -103,7 +103,7 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textVie_coffe"
-        tools:srcCompat="@drawable/back_arrow" />
+        app:srcCompat="@drawable/back_arrow" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
