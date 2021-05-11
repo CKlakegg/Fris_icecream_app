@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.main.order.chooseCoffeFragment"
-    android:background="@color/light_pink">
+    android:background="@color/light_pink"
+    tools:context=".ui.main.order.chooseCoffeFragment">
 
     <TextView
         android:id="@+id/choose_coffe_type_textView"
@@ -22,13 +22,74 @@
 
     <ImageView
         android:id="@+id/filter_icon"
-        android:layout_width="94dp"
-        android:layout_height="85dp"
-        android:layout_marginTop="40dp"
+        android:layout_width="@dimen/icon_order"
+        android:layout_height="@dimen/icon_order"
+        android:layout_marginTop="@dimen/margin_icons"
         android:src="@drawable/icon_filter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choose_coffe_type_textView" />
 
+    <TextView
+        android:id="@+id/filter_icon_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/recoleta_"
+        android:text="filter"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_icon" />
+
+    <ImageView
+        android:id="@+id/cortado_icon"
+        android:layout_width="@dimen/icon_order"
+        android:layout_height="@dimen/icon_order"
+        android:layout_marginTop="@dimen/margin_icon_order"
+        android:src="@drawable/icon_coffe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filter_icon_textView" />
+
+    <TextView
+        android:id="@+id/cortado_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/recoleta_"
+        android:text="cortado"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cortado_icon" />
+
+    <ImageView
+        android:id="@+id/espresso_icon"
+        android:layout_width="@dimen/icon_order"
+        android:layout_height="@dimen/icon_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="@dimen/margin_icon_order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cortado_textView"
+        android:src="@drawable/icon_espresso"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/recoleta_"
+        android:text="espresso"
+        android:textAlignment="center"
+        android:textColor="@color/redpink"
+        android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/espresso_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -29,6 +29,7 @@
         android:textAlignment="center"
         android:textColor="@color/redpink"
         android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,6 +44,7 @@
         android:text="bestille"
         android:textColor="@color/redpink"
         android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/menu" />
@@ -57,6 +59,7 @@
         android:textAlignment="center"
         android:textColor="@color/redpink"
         android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/order" />
@@ -71,6 +74,7 @@
         android:textAlignment="center"
         android:textColor="@color/redpink"
         android:textSize="@dimen/medium_text"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact" />
