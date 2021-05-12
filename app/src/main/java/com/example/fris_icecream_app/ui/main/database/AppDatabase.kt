@@ -6,9 +6,9 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 class AppDatabase {
-    @Database(entities = [OrderObject::class], version = 1)
+    @Database(entities = [TypeObject::class], version = 1)
     abstract class AppDatabase : RoomDatabase() {
-        /*abstract fun picturesDAO(): PicturesDAO*/
+        abstract fun OderDAO(): OderDAO
 
         companion object {
             @Volatile

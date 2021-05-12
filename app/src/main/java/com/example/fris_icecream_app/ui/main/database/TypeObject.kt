@@ -4,11 +4,10 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 
-@Entity(tableName = "order")
-class OrderObject (
-    val price:Int,
+@Entity(tableName = "Type")
+class TypeObject (
     val type: String,
-    val howMany:Int,
+    val price: Int,
     @PrimaryKey
     val key:String,
     val accessiblity: Double

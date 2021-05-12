@@ -17,27 +17,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.main_activity)
 
 
-
-
-        open_menu.setOnClickListener {
-
-
-            val intent = Intent(this, MenuFragment::class.java)
-            setFragment(DropDownFragment())
-
-
-        }
-
-
-    }
-
-
-    private fun setFragment(fragmentToShow: Fragment) {
-
-
-        supportFragmentManager.beginTransaction().replace(R.id.container_layout, fragmentToShow).addToBackStack(null)
-            .commit()
-
     }
 
 }
