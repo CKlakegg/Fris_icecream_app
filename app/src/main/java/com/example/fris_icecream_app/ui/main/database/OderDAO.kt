@@ -15,6 +15,6 @@ interface OderDAO {
     @Delete
     fun deleteItem(typeObject: TypeObject)
 
-    @Query ("SELECT * FROM TYPE")
+    @Query ("SELECT * FROM Type")
     fun getAllItems(): List<TypeObject>
 }

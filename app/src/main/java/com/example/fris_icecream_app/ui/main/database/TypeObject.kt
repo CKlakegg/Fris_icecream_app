@@ -8,6 +8,7 @@ import androidx.room.PrimaryKey
 class TypeObject (
     val type: String,
     val price: Int,
+    val amount: Int = 0,
     @PrimaryKey
     val key:String,
     val accessiblity: Double
