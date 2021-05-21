@@ -7,7 +7,7 @@ import androidx.room.Query
 
 
 @Dao
-interface OderDAO {
+interface OrderDAO {
 
     @Insert
     fun addItem(typeObject: TypeObject)

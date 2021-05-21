@@ -11,6 +11,8 @@ import androidx.navigation.fragment.findNavController
 import androidx.navigation.navOptions
 import androidx.recyclerview.widget.RecyclerView
 import com.example.fris_icecream_app.R
+import com.example.fris_icecream_app.ui.main.database.AppDatabase
+import com.example.fris_icecream_app.ui.main.database.AppDatabase.AppDatabase.Companion.getDatabase
 import kotlinx.android.synthetic.main.fragment_check_out.*
 import kotlinx.android.synthetic.main.fragment_check_out.view.*
 
@@ -61,6 +63,7 @@ class CheckOutFragment : Fragment() {
         }
 
         add_more_button.setOnClickListener {
+
         }
 
         pay_button.setOnClickListener {
@@ -73,6 +76,10 @@ class CheckOutFragment : Fragment() {
     }
 
     private fun initRecyclerView(){
+        val database = AppDatabase.getDatabase(requireContext())
+        checkOutAdapter = CheckOutAdapter(
+            listOf()
+        )
 
 
     }
